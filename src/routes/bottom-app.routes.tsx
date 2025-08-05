@@ -4,8 +4,8 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
+import { HomeStackRoutes } from "./stacks/home-stack.routes";
 import { CompletedTasks } from "@screens/CompletedTasks";
-import { Home } from "@screens/Home";
 import { UserProfile } from "@screens/UserProfile";
 
 import { HouseIcon, ListChecksIcon, UserIcon } from "phosphor-react-native";
@@ -39,8 +39,8 @@ export function BottomAppRoutes() {
         }}
       >
         <Screen 
-          name="home"
-          component={Home}
+          name="homeStackRoutes"
+          component={HomeStackRoutes}
           options={{
             tabBarIcon: ({ focused }) => <HouseIcon size={34} color={focused ? theme.COLORS.PURPLE : theme.COLORS.GRAY[200]} />
           }}

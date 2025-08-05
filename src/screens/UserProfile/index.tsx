@@ -1,9 +1,11 @@
-import { Container, Title } from "./styles"
+import { Header } from "@components/Header";
+import { Container, Main } from "./styles"
 
 export function UserProfile() {
   return (
     <Container>
-      <Title>UserProfile</Title>
+      <Header name="Perfil" />
+      <Main />
     </Container>
   );
 }
